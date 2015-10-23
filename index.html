@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Firefox OS, Liberdade Além da Web!</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/firefoxos.css" id="theme">
+
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+
+			.partes .box {
+				background:rgba(0,0,0,0.4);
+				box-shadow:0 0 3px rgba(0,0,0,0.6);
+				padding:10px;
+			}
+			.partes .box:not(:last-of-type) {
+				margin-bottom:10px;
+			}
+			.partes .box h2 {
+				font-size:1.6em;
+			}
+
+		</style>
+
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-57097200-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section data-background="img/bg.png">
+					<h1>Firefox OS</h1>
+					<h3>Liberdade Além da Web!</h3>
+					<p>
+						<small>Comunidade Mozilla Brasil - <a href="http://mozillabrasil.org.br/">mozillabrasil.org.br</a></small>
+					</p>
+        </section>
+
+        <section>
+          <h1>Sobre nós</h1>
+
+					<ul>
+						<li><h2>Marina</h2></li>
+            <li>Estudante de Ciência da Computação @ UFAL</li>
+            <li>Desenvolvedora Back-End @ Roga Labs</li>
+            <li>Mozillian <3</li>
+						<li><h2>Bruno</h2></li>
+            <li>Desenvolvedor Front-End @ CESAR</li>
+            <li>NodeBots Recife</li>
+            <li>Mozillian <3</li>
+          </ul>
+        </section>
+
+				<section>
+
+          <h1>A Mozilla é...</h1>
+          <div class="partes">
+					<blockquote>uma comunidade mundial de apaixonados por tecnologia trabalhando juntos para manter a internet acessível para que todas as pessoas sejam contribuidoras e criadoras da Web.</blockquote>
+
+					<aside class="notes">
+						- Somos programadores, advogados, cientistas, designers, estudantes...</br>
+						- Somos pessoas comuns que lutam para garantir a sua liberdade e direito de expressão.
+					</aside>
+
+				</section>
+
+				<section>
+					<h1>Agenda</h1>
+					<ul>
+						<li>Ecossistema Firefox OS</li>
+						<li>Firefox Developer Edition</li>
+						<li>Open web app</li>
+						<li>Minha App</li>
+						<li>Web APIs</li>
+						<li>Apache Cordova</li>
+						<li>Deploy</li>
+						<li>Publish</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/fox.png">
+          <h1>Firefox OS</h1>
+          <aside class="notes">
+            - Surgiu em 2011
+            - Boot 2 Gecko
+            - Lançado em 2013 no Mobile World Congress
+					</aside>
+				</section>
+
+				<section>
+
+					<div class="partes">
+            <div class="gonk box">
+							<h2>Gonk</h2>
+							<p>Kernel Linux, Device drivers e camada de abstração do hardware</p>
+						</div>
+						<div class="gecko box fragment">
+							<h2>Gecko</h2>
+							<p>Motor de JS e Renderização de HTML, APIs amigáveis para acesso ao hardware</p>
+						</div>
+						<div class="gaia box fragment">
+							<h2>Gaia</h2>
+							<p>Coleção de aplicativos web que fazem a UI</p>
+						</div>
+					</div>
+
+					<aside class="notes">
+						- Kernel baseado no AOSP (Android Open Source Project)
+					</aside>
+
+        </section>
+
+        <section>
+          <h1>Recursos</h1>
+          <div class="partes">
+	          <div class="box">
+	            <h2>Geolocalização</h2>
+	          </div>
+	          <div class="box">
+	            <h2>Bluetooth</h2>
+	          </div>
+	          <div class="box">
+	            <h2>Push Notifications</h2>
+	          </div>
+	          <div class="box">
+	            <h2>Bateria</h2>
+	          </div>
+          </div>
+        </section>
+
+        <section>
+					<h3>Ferramentas de</h3>
+					<h1>desenvolvimento</h1>
+					<img src="img/devtools.png">
+					<a href="http://mozilla.org/firefox/developer/">mozilla.org/firefox/developer/</a>
+				</section>
+
+				<section>
+					<h3>Firefox OS</h3><h1>Simulator</h1>
+					<img src="img/simulator.png">
+				</section>
+
+				<section>
+					<img src="img/alcatel.png" style="height:500px;width:auto;">
+					<h1>Alcatel One Touch Fire</h1>
+				</section>
+
+				<section>
+					<header>
+						<h1>Tipos de Assinatura<h1>
+					</header>
+					<div class="partes">
+						<div class="hospedados box fragment">
+							<h2>Apps hospedados</h2>
+							<p>Armazenada no seu servidor, fácil de atualizar, acesso ao hardware limitado.</p>
+						</div>
+						<div class="privilegiados box fragment">
+							<h2>Apps empacotados</h2>
+							<p>Verificada pelo Marketplace, utiliza uma Politica de Segurança de Conteúdo, armazenada em um servidor.</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h1>Minha primeira App</h1>
+				</section>
+
+				<section>
+					<header>
+						<h1>Tecnologias de ponta!<h1>
+					</header>
+					<div class="partes">
+						<div class="box fragment">
+							<h2>HTML</h2>
+						</div>
+						<div class="box fragment">
+							<h2>CSS</h2>
+						</div>
+						<div class="box fragment">
+							<h2>JavaScript</h2>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<header>
+						<h3>Um pouco sobre</h3>
+						<h1>HTML<h1>
+					</header>
+					<div class="partes">
+						<div class="box fragment">
+							<h2>HTML 5</h2>
+						</div>
+						<div class="box fragment">
+							<h2>TAGs</h2>
+						</div>
+						<div class="box fragment">
+							<h2>WEB APIs</h2>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<header>
+						<h3>Um pouco sobre</h3>
+						<h1>CSS<h1>
+					</header>
+					<div class="partes">
+						<div class="box fragment">
+							<h2>CSS 3</h2>
+						</div>
+						<div class="box fragment">
+							<h2>Seletores</h2>
+						</div>
+						<div class="box fragment">
+							<h2>Animações</h2>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<header>
+						<h3>Um pouco sobre</h3>
+						<h1>JavaScript<h1>
+					</header>
+					<div class="partes">
+						<div class="box fragment">
+							<h2>Variáveis</h2>
+						</div>
+						<div class="box fragment">
+							<h2>Funções</h2>
+						</div>
+						<div class="box fragment">
+							<h2>Eventos</h2>
+						</div>
+						<div class="box fragment">
+							<h2>APIs</h2>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>E agora</h3>
+					<h1>vamos codar!</h1>
+				</section>
+
+				<section>
+					<h3>Apache</h3>
+					<h1>Cordova</h1>
+					<img src="img/cordova_256.png" alt="Cordova" />
+					<br>
+					<a href="http://cordova.apache.org">cordova.apache.org</a>
+				</section>
+
+				<section>
+					<h3>Firefox</h3><h1>Marketplace</h1>
+					<img src="img/marketplace.png" style="height:550px;width:auto;">
+				</section>
+
+				<section>
+					<h1>E agora?</h1>
+					<ul>
+						<li><a href="http://developer.mozilla.org/">http://developer.mozilla.org/</a></li>
+						<li><a href="http://mozilla.org/aurora">http://mozilla.org/aurora</a></li>
+						<li><a href="http://firefoxosbooks.org/">http://firefoxosbooks.org/</a></li>
+						<li><a href="https://github.com/mozilla/firefoxos-quick-start">https://github.com/mozilla/firefoxos-quick-start</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Comunidade</h2>
+					<img src="img/logo-comunidade.png">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme,
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				dependencies: [
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
